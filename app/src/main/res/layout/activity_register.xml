@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/txregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="61dp"
+        android:text="REGISTER HERE"
+        android:textColor="#3F51B5"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/edtname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Enter your Full Names"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/edtemail"
+        app:layout_constraintEnd_toEndOf="@+id/txregister"
+        app:layout_constraintTop_toBottomOf="@+id/txregister" />
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="61dp"
+        android:ems="10"
+        android:hint="Enter your Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edtphone"
+        app:layout_constraintStart_toStartOf="@+id/edtname"
+        app:layout_constraintTop_toBottomOf="@+id/edtname" />
+
+    <EditText
+        android:id="@+id/edtphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="Enter your PhoneNumber"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/edtage"
+        app:layout_constraintStart_toStartOf="@+id/edtage"
+        app:layout_constraintTop_toBottomOf="@+id/edtemail" />
+
+    <EditText
+        android:id="@+id/edtage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="Enter your Age"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/edtpassword"
+        app:layout_constraintStart_toStartOf="@+id/edtpassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtphone" />
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="69dp"
+        android:ems="10"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnregister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtage" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="107dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="63dp"
+        android:text="REGISTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
